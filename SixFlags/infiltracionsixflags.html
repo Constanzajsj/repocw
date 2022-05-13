@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./statics/styles.css">
+    <title>
+        Boletos para six flags
+    </title>
+    <link rel="icon" href="https://pbs.twimg.com/media/EfO5E6TWsAMMbOq.jpg" type="image" target="self">
+</head>
+<body>
+    <h1>
+        <i>
+            Six Flags
+        </i>
+    </h1>
+    <figure>
+        <img src="https://i.blogs.es/0ed1df/310521-roblox/1366_521.jpeg" alt="Vista del parque en roblox" width="450">
+    </figure>
+    ¡Hola! ¿Se te olvidaron tus boletos en casa?,¿No los compraste?, Pues estás de suerte porque hice un sitio que te doxxea y te da boletos falsos con los que no vas a poder entrar al parque de todas formas :D
+    <hr>
+    <form action="./dynamics/sixflags.php" method="post">
+        <fieldset>
+            <h3>
+                Pantalla de compra
+            </h3>
+            <label for="nombre">
+                Nombre:
+                <input type="text" name="nombre" id="nombre" placeholder="ej. María">
+            </label>
+            <br>
+            <br>
+            <label for="apellido">
+                Apellido:
+                <input type="text" name="apellido" id="apellido" placeholder="ej. Torres Díaz">
+            </label>
+            <br>
+            <br>
+            <label for="edad">
+                Edad:
+                <input type="number" name="edad" id="edad" min="15" max="100">
+            </label>
+            <br>
+            <br>
+            <label for="boletos">
+                Número de boletos:
+                <input type="number" name="boletos" id="boletos" min="1" max="15">
+            </label>
+            <br>
+            <br>
+            <label for="tipoboleto" name="tipoboleto" id="tipoboleto">
+                Tipo de boleto:
+                <select name="tipoboleto" id="tipoboleto">
+                    <option value="1">
+                        Económico
+                    </option>
+                    <option value="2">
+                        Normal
+                    </option>
+                    <option value="3">
+                        Pase dorado
+                    </option>
+                    <option  value="4">
+                        Flash pass
+                    </option>
+                    <option  value="5">
+                        Pase anual
+                    </option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label for="domicilio">
+                Entrega de los boletos:
+                <input type="text" name="domicilio" id="domicilio" placeholder="ej. Calle Wallaby 42 Sidney">
+            </label>
+            <br>
+            <button type="submit" id="enviar">
+                Enviar
+            </button>
+            <button type="reset" id="borrar">
+                Borrar datos
+            </button>
+        </fieldset>
+    </form>
+    <hr>
+</body>
+</html>
